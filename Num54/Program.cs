@@ -1,13 +1,10 @@
 ﻿//Задача 54: Задайте двумерный массив. 
 //Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
-int m = 5;
-int n = 8;
-
 
 int [,] getArray(int mL, int nL)
 {
-    int [,] result = new int[m,n];
+    int [,] result = new int[mL,nL];
     for (int i = 0; i < mL; i++)
     {
         for (int j = 0; j < nL; j++)
@@ -51,6 +48,8 @@ void sortArray(int [,] a)
     }
 }
 
+int m = 5;
+int n = 8;
 
 int [,] array = getArray(m,n);
 printArray(array);
